@@ -8,7 +8,7 @@
     ansible.builtin.pip:
       name: "{{ item }}"
       executable: pip3.9
-    loops:
+    loop:
     - cryptography
     - PyMySQL
 
