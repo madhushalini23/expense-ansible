@@ -21,5 +21,5 @@
     register: mysql_info
 
   - name: print the output
-    ansible .builtin.debug:
+    ansible.builtin.debug:
     msg: "mysql info: {{ mysql_info }}"
