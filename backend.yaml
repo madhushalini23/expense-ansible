@@ -62,11 +62,11 @@
       login_host: mysql.gundluru.online
       target: /app/schema/backend.sql
 
-  - name: deamon reload and restart service
+  - name: daemon reload and restart service
     ansible.builtin.systemd.service:
       enabled: true
       state: restarted
-      deamon_reload: true
+      daemon_reload: true
       name: backend
 
   
